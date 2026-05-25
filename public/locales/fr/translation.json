@@ -1,0 +1,86 @@
+{
+	"navBar": {
+		"navButton": {
+			"skills": "Compétences",
+			"projects": "Projets",
+			"aboutMe": "À propos",
+			"contact": "Contact"
+		}
+	},
+	"hero": {
+		"backgroundPicture": "Une image montrant Ny Hasina dans un vaste champ d’herbe verte avec un magnifique ciel bleu et quelques nuages.",
+		"localization": "Basé à Antananarivo, Madagascar",
+		"paragraph": "Un esprit créatif qui construit chaque jour — concevant des systèmes performants, des expériences immersives et des univers numériques réfléchis à travers le code, le design et l’expérimentation.",
+		"cta": {
+			"primary": "M’embaucher",
+			"secondary": "Voir les projets"
+		},
+		"role": {
+			"gameDev": "Développeur de jeux vidéo",
+			"systemDev": "Développeur système",
+			"webDev": "Développeur web",
+			"UIUXDev": "Développeur UI / UX",
+			"graphicsDesigner": "Designer graphique",
+			"3dArtist": "Artiste 3D"
+		}
+	},
+	"skills": {
+		"header": {
+			"title": "Compétences",
+			"subtitle": "Technologies, outils et disciplines créatives avec lesquels j’ai une solide expérience."
+		},
+		"bento": {
+			"webDev": {
+				"title": "Développement Web",
+				"subtitle": "Développeur front-end spécialisé dans la création d’expériences web premium et responsives avec React. Passionné par le design UI moderne, les interactions fluides et la création d’interfaces visuellement distinctives avec des assets et icônes conçus sur mesure."
+			},
+			"gameDev": {
+				"title": "Développement de Jeux Vidéo",
+				"subtitle": "Développer des jeux vidéo est une passion de longue date, et au fil des années j’ai acquis de l’expérience dans chaque étape du processus — programmation gameplay, UI, outils, workflows et création d’assets. J’aime concevoir des systèmes performants et créer des pipelines efficaces qui accélèrent le développement tout en conservant une expérience finale soignée."
+			},
+			"lowLevelDev": {
+				"title": "Programmation Bas Niveau",
+				"subtitle": "Programmeur bas niveau spécialisé en C/C++, avec de solides bases en gestion mémoire, optimisation et architecture système. Expérimenté dans la recréation de composants fondamentaux des bibliothèques Unix et le développement de logiciels performants proches du matériel."
+			},
+			"photoEditing": {
+				"title": "Retouche Photo",
+				"subtitle": "À l’aise avec la retouche photo et l’amélioration d’assets visuels, avec de l’expérience dans la création de compositions soignées et l’amélioration de la présentation globale d’un projet."
+			},
+			"3D": {
+				"title": "3D",
+				"subtitle": "Passionné par la création 3D, j’ai acquis une solide expérience dans presque toutes les étapes du workflow avec Blender — du modeling et texturing au rigging, à l’animation et à la création d’environnements. Cette polyvalence me permet de donner vie aux idées tout en maintenant un contrôle créatif et une cohérence technique tout au long de la production."
+			},
+			"art": {
+				"title": "Art",
+				"subtitle": "Parce que les jeux vidéo sont un mélange de technologie et d’art, je me suis naturellement intéressé à l’aspect créatif du développement. Même si je continue encore à progresser, j’apprécie travailler sur les aspects artistiques et développer mon sens de la composition, de l’esthétique et de la narration visuelle."
+			}
+		}
+	},
+	"portfolio": {
+		"header": {
+			"title": "Projets",
+			"subtitle": "Une sélection de projets sur lesquels j’ai travaillé, terminés ou encore en cours."
+		},
+		"schoolProjects": {
+			"title": "Projets Scolaires",
+			"libft": "Recrée les fonctions et utilitaires de base de la bibliothèque C depuis zéro.",
+			"get_next_line": "Implémente une fonction permettant de lire un fichier ligne par ligne, en mettant l’accent sur les buffers et la gestion mémoire en C.",
+			"ft_printf": "Recrée la fonction printf du C, enseignant les fonctions variadiques, le formatage et la gestion des types.",
+			"philosopher": "Une simulation multithread du problème des philosophes mangeurs, axée sur la concurrence et la synchronisation.",
+			"minishell": "Un shell Unix simple gérant les commandes, pipes, redirections et processus.",
+			"webserv": "Un serveur HTTP basique développé depuis zéro, couvrant les sockets, HTTP et la logique serveur en C++.",
+			"ft_transcendence": "Un projet full-stack développant une plateforme immobilière interactive en temps réel avec un système de recherche alimenté par l’IA, incluant l’implémentation complète de l’interface utilisateur ainsi que des fonctionnalités backend et frontend."
+		}
+	},
+	"footer": {
+		"contact": {
+			"section": "Contact",
+			"availability": "Disponible pour :<emphase>Stages</emphase><emphase>Postes Junior</emphase>",
+			"CTA": "Prendre contact"
+		},
+		"tech": "Technologies",
+		"social": "Réseaux",
+		"software": "Logiciels",
+		"copyright": "Tous droits réservés."
+	}
+}

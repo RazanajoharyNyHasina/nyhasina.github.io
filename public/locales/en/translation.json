@@ -1,0 +1,86 @@
+{
+	"navBar": {
+		"navButton": {
+			"skills": "Skills",
+			"projects": "Projects",
+			"aboutMe": "About Me",
+			"contact": "Contact"
+		}
+	},
+	"hero": {
+		"backgroundPicture": "A picture showing Ny Hasina in a vast field of green grass with a beautiful blue sky and few clouds.",
+		"localization": "Based in Antananarivo, Madagascar",
+		"paragraph": "A creative mind building every day — crafting performant systems, immersive experiences, and thoughtful digital worlds through code, design, and experimentation.",
+		"cta": {
+			"primary": "Hire me",
+			"secondary": "View Projects"
+		},
+		"role": {
+			"gameDev": "Game Developer",
+			"systemDev": "System Developer",
+			"webDev": "Web Developer",
+			"UIUXDev": "UI / UX Developer",
+			"graphicsDesigner": "Graphics Designer",
+			"3dArtist": "3D Artist"
+		}
+	},
+	"skills": {
+		"header": {
+			"title": "Skills",
+			"subtitle": "Technologies, tools, and creative disciplines I have strong experience working with."
+		},
+		"bento": {
+			"webDev": {
+				"title": "Web Development",
+				"subtitle": "Front-end developer specialized in crafting premium, responsive web experiences with React. Passionate about modern UI design, smooth interactions, and building visually distinctive interfaces with custom-made assets and icons."
+			},
+			"gameDev": {
+				"title": "Game Development",
+				"subtitle": "Developing games has been a long-time passion of mine, and over the years I’ve built experience across every part of the process — gameplay programming, UI, tools, workflows, and asset creation. I enjoy crafting performant systems and creating efficient pipelines that accelerate development while maintaining a polished final experience."
+			},
+			"lowLevelDev": {
+				"title": "Low-Level Programming",
+				"subtitle": "Low-level programmer specialized in C/C++, with strong foundations in memory management, optimization, and systems architecture. Experienced in rebuilding core Unix library components and developing performant software close to the hardware."
+			},
+			"photoEditing": {
+				"title": "Photo Editing",
+				"subtitle": "Comfortable with photo editing and visual asset refinement, with experience creating polished compositions and improving the overall presentation of a project."
+			},
+			"3D": {
+				"title": "3D",
+				"subtitle": "Passionate about 3D creation, I’ve built strong experience across nearly every part of the workflow using Blender — from modeling and texturing to rigging, animation, and environment creation. This versatility allows me to bring ideas to life while maintaining both creative control and technical consistency throughout production."
+			},
+			"art": {
+				"title": "Art",
+				"subtitle": "Because games are a blend of technology and art, I naturally became interested in the creative side of development as well. Even though I’m still continuously improving, I enjoy working on artistic aspects and developing my sense of composition, aesthetics, and visual storytelling."
+			}
+		}
+	},
+	"portfolio": {
+		"header": {
+			"title": "Projects",
+			"subtitle": "A selection of projects I have worked on, both completed and in progress."
+		},
+		"schoolProjects": {
+			"title": "School Projects",
+			"libft": "Recreates basic C library functions and utilities from scratch.",
+			"get_next_line": "Implements a function to read a file one line at a time, focusing on buffers and memory management in C.",
+			"ft_printf": "Recreates the C printf function, teaching variadic functions, formatting, and type handling.",
+			"philosopher": "A multithreading simulation of the dining philosophers problem, focused on concurrency and synchronization.",
+			"minishell": "A simple Unix shell handling commands, pipes, redirections, and processes.",
+			"webserv": "A basic HTTP server built from scratch, covering sockets, HTTP, and server logic in C++.",
+			"ft_transcendence": "A full-stack project developing a real-time interactive real estate platform with an AI-powered search system, including end-to-end implementation of the user interface as well as backend and frontend functionality."
+		}
+	},
+	"footer": {
+		"contact": {
+			"section": "Contact",
+			"availability": "Available for:<emphase>Internships</emphase><emphase>Junior Jobs</emphase>",
+			"CTA": "Get in touch"
+		},
+		"tech": "Tech",
+		"social": "Social",
+		"software": "Software",
+		"copyright": "All rights reserved."
+	}
+}

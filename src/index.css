@@ -1,0 +1,97 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap'); */
+@import "tailwindcss";
+
+@theme {
+	--color-bg: #0e0e0e;
+	--color-text: #f8fafc;
+	--color-surface-primary: #2a2a2c;
+	--color-surface-secondary: #39393c;
+	--color-accent: #e6712b;
+	/* --color-accent: #e6272e; */
+	--color-accent-secondary: #e62b2b;
+
+	--font-high-priority: "Saonara";
+
+	--animate-shiny: Shiny linear infinite 3s;
+}
+
+body {
+	color: var(--color-text);
+	background-color: var(--color-bg);
+	font-family: "Montserrat", sans-serif;
+	scroll-behavior: smooth;
+}
+
+@font-face {
+	font-family: "Saonara";
+	src: url("./assets/fonts/Saonara.otf") format("opentype");
+	display: swap;
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url("./assets/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url("./assets/fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url("./assets/fonts/Montserrat/Montserrat-BoldItalic.ttf") format("truetype");
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url("./assets/fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
+	font-weight: bolder;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url("./assets/fonts/Montserrat/Montserrat-SemiBoldItalic.ttf") format("truetype");
+	font-weight: bolder;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url("./assets/fonts/Montserrat/Montserrat-Light.ttf") format("truetype");
+	font-weight: lighter;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url("./assets/fonts/Montserrat/Montserrat-LightItalic.ttf") format("truetype");
+	font-weight: lighter;
+	font-style: italic;
+}
+
+body {
+	scroll-behavior: smooth;
+	color: var(--color-text);
+	background-color: var(--color-bg);
+	font-family: "Montserrat", sans-serif;
+	font-weight: normal;
+}
+
+@keyframes Shiny {
+	from {
+		transform: translateX(-1000px) rotateZ(45deg);
+	}
+	to {
+		transform: translateX(1000px) rotateZ(45deg);
+	}
+}

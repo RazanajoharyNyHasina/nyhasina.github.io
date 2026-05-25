@@ -1,0 +1,1 @@
+{"root":["./src/App.tsx","./src/main.tsx","./src/svg.d.tsx","./src/components/cta.tsx","./src/components/footer.tsx","./src/components/navbar.tsx","./src/components/section.tsx","./src/i18n/i18n.tsx","./src/layout/layout.tsx","./src/pages/main/hero_section.tsx","./src/pages/main/portfolio_section.tsx","./src/pages/main/skills_section.tsx"],"errors":true,"version":"5.9.3"}
