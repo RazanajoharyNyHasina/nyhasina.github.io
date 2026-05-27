@@ -107,6 +107,7 @@ function Portfolio({
 					schoolProjectsData.map((value: string, id: number) => {
 						return (
 							<Reveal
+								className="w-full h-full"
 								key={id}
 							>
 								<PortfolioSchoolProject
