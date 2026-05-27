@@ -4,6 +4,7 @@ import CTAPrimary from "./cta_primary";
 import IconArrowPointingRight from "../assets/icons/ArrowPointingTopRight.svg?react";
 import IconLogo from "../assets/Logo.svg?react";
 import SvgArc from "../assets/Arc.svg?react";
+import Reveal from "./reveal";
 
 interface FooterNavProps {
 	title: string;
@@ -91,107 +92,112 @@ function Footer({ t }: SectionsProps) {
 	return (
 		<footer
 			id="contact"
-			className="flex flex-col items-center justify-center
-			gap-8
-			p-4 lg:px-32
-			mt-2 md:mt-4 lg:mt-12
-			w-full relative"
+			className="w-full"
 		>
-			<SvgArc
-				className="w-full h-full object-cover
-				mt-10"
-				id="contact"
-			/>
-
-			<IconLogo
-				className="w-12 h-12 mb-16"
-			/>
-
-			<div
-				className="grid grid-cols-2 grid-rows-1
-				min-[640px]:grid-cols-4
-				gap-4
-				w-full"
+			<Reveal
+				className="flex flex-col items-center justify-center
+				gap-8
+				p-4 lg:px-32
+				mt-2 md:mt-4 lg:mt-12
+				w-full relative"
 			>
-				<FooterNavSection
-					title={t("footer.tech")}
-					data={dataTech}
-				/>
-				<FooterNavSection
-					title={t("footer.software")}
-					data={dataSoftware}
-				/>
-				<FooterNavSection
-					title={t("footer.social")}
-					data={dataSocial}
+
+				<SvgArc
+					className="w-full h-full object-cover
+					mt-10"
+					id="contact"
 				/>
 
-				<header
-					className="grid grid-cols-1 grid-rows-[auto_1fr] items-start justify-center w-full gap-4"
-				>
-					<h2
-						className="bg-linear-to-br from-text to-[color-mix(in_srgb,var(--color-text)_50%,var(--color-bg))]
-						font-bold text-xl
-						bg-clip-text text-transparent"
-					>
-						{t("footer.contact.section")}
-					</h2>
-					<div
-						className="flex flex-col items-start justify-center w-full gap-1
-						text-sm"
-					>
+				<IconLogo
+					className="w-12 h-12 mb-16"
+				/>
 
-						<Trans
-							className="flex"
-							i18nKey="footer.contact.availability"
-							components={{
-								emphase: <span className="font-saonara font-bold text-lg"></span>
-							}}
-						/>
-
-						<div>Antananarivo, Madagascar</div>
-
-						<div className="h-px w-full bg-text my-4 opacity-50"></div>
-
-						<CTAPrimary
-							title={t("footer.contact.CTA")}
-							onClick={() => window.location.href = "mailto:djazejhasi@gmail.com"}
-							icon={IconArrowPointingRight}
-						/>
-
-					</div>
-				</header>
-
-
-			</div>
-
-			<div
-				className="h-px flex-none w-full
-				opacity-50
-				bg-linear-to-r from-transparent via-text to-transparent
-				mt-8"
-			>
-			</div>
-
-			<div
-				className="text-sm"
-			>
-				<p
-					className="flex items-center justify-center
-					text-center
+				<div
+					className="grid grid-cols-2 grid-rows-1
+					min-[640px]:grid-cols-4
+					gap-4
 					w-full"
 				>
-					&copy; {` ${new Date().getFullYear()} RAKOTOARIVONY Razanajohary Ny Hasina.`}
-				</p>
-				<p
-					className="flex items-center justify-center
-					text-center
-					mb-4
-					w-full"
+					<FooterNavSection
+						title={t("footer.tech")}
+						data={dataTech}
+					/>
+					<FooterNavSection
+						title={t("footer.software")}
+						data={dataSoftware}
+					/>
+					<FooterNavSection
+						title={t("footer.social")}
+						data={dataSocial}
+					/>
+
+					<header
+						className="grid grid-cols-1 grid-rows-[auto_1fr] items-start justify-center w-full gap-4"
+					>
+						<h2
+							className="bg-linear-to-br from-text to-[color-mix(in_srgb,var(--color-text)_50%,var(--color-bg))]
+							font-bold text-xl
+							bg-clip-text text-transparent"
+						>
+							{t("footer.contact.section")}
+						</h2>
+						<div
+							className="flex flex-col items-start justify-center w-full gap-1
+							text-sm"
+						>
+
+							<Trans
+								className="flex"
+								i18nKey="footer.contact.availability"
+								components={{
+									emphase: <span className="font-saonara font-bold text-lg"></span>
+								}}
+							/>
+
+							<div>Antananarivo, Madagascar</div>
+
+							<div className="h-px w-full bg-text my-4 opacity-50"></div>
+
+							<CTAPrimary
+								title={t("footer.contact.CTA")}
+								onClick={() => window.location.href = "mailto:djazejhasi@gmail.com"}
+								icon={IconArrowPointingRight}
+							/>
+
+						</div>
+					</header>
+
+
+				</div>
+
+				<div
+					className="h-px flex-none w-full
+					opacity-50
+					bg-linear-to-r from-transparent via-text to-transparent
+					mt-8"
 				>
-					{t("footer.copyright")}
-				</p>
-			</div>
+				</div>
+
+				<div
+					className="text-sm"
+				>
+					<p
+						className="flex items-center justify-center
+						text-center
+						w-full"
+					>
+						&copy; {` ${new Date().getFullYear()} RAKOTOARIVONY Razanajohary Ny Hasina.`}
+					</p>
+					<p
+						className="flex items-center justify-center
+						text-center
+						mb-4
+						w-full"
+					>
+						{t("footer.copyright")}
+					</p>
+				</div>
+			</Reveal>
 		</footer>
 	)
 }

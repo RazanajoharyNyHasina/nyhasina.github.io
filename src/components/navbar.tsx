@@ -28,10 +28,12 @@ function NavButton({
 interface NavBarProps {
 	atTop: boolean;
 	t: TFunction<"translation">;
+	loaded: boolean;
 }
 
 function NavBar({
 	atTop = false,
+	loaded = false,
 	t
 }: NavBarProps) {
 	const navigationData: NavButtonProps[] = [
@@ -67,13 +69,17 @@ function NavBar({
 
 	return (
 		<nav
-			className="fixed top-0 left-0
+			className="fixed left-0
 			grid grid-cols-[1fr_auto] grid-rows-1
 			p-4 md:p-8
 			text-shadow-lg
+			transition-discrete duration-300
 			place-items-center
 			pointer-events-none
 			w-full h-15"
+			style={{
+				top: loaded ? "0px" : "-60px"
+			}}
 		>
 			<div
 				className="absolute top-0 left-0

@@ -7,6 +7,7 @@ import IconGameDev from "../assets/icons/GameDev.svg?react";
 import Icon3D from "../assets/icons/3D.svg?react";
 import IconArt from "../assets/icons/Art.svg?react";
 import type { ComponentType, SVGProps } from "react";
+import Reveal from "../components/reveal";
 
 interface SkillsCardProps {
 	title: string;
@@ -188,14 +189,18 @@ function Skills({
 				{
 					skillsData.map((value: SkillsCardProps, id: number) => {
 						return (
-							<SkillsCard
+							<Reveal
+								className="w-full h-full"
 								key={id}
-								title={value.title}
-								subtitle={value.subtitle}
-								icon={value.icon}
-								important={value.important ?? false}
-								tech={value.tech ?? []}
-							/>
+							>
+								<SkillsCard
+									title={value.title}
+									subtitle={value.subtitle}
+									icon={value.icon}
+									important={value.important ?? false}
+									tech={value.tech ?? []}
+								/>
+							</Reveal>
 						)
 					})
 				}

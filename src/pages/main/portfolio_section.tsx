@@ -1,4 +1,5 @@
 import type { SectionsProps } from "../../App";
+import Reveal from "../../components/reveal";
 import SectionHeader from "../../components/section_header";
 
 interface PortfolioSectionProps {
@@ -9,19 +10,23 @@ function PortfolioSection({
 	title = "Title"
 }: PortfolioSectionProps) {
 	return (
-		<header
-			className="w-full
-			flex items-center justify-start
-			px-4 md:px-8 lg:px-32 m-2"
+		<Reveal
+			className="w-full"
 		>
-			<h3
-				className="bg-linear-to-br from-text to-[color-mix(in_srgb,var(--color-text)_50%,var(--color-bg))]
+			<header
+				className="w-full
+			flex items-center justify-start
+			px-4 md:px-8 lg:px-32 my-2"
+			>
+				<h3
+					className="bg-linear-to-br from-text to-[color-mix(in_srgb,var(--color-text)_50%,var(--color-bg))]
 				font-bold text-2xl
 				bg-clip-text text-transparent"
-			>
-				{title}
-			</h3>
-		</header>
+				>
+					{title}
+				</h3>
+			</header>
+		</Reveal>
 	)
 }
 
@@ -101,11 +106,14 @@ function Portfolio({
 				{
 					schoolProjectsData.map((value: string, id: number) => {
 						return (
-							<PortfolioSchoolProject
+							<Reveal
 								key={id}
-								title={value}
-								subtitle={t(`portfolio.schoolProjects.${value}`)}
-							/>
+							>
+								<PortfolioSchoolProject
+									title={value}
+									subtitle={t(`portfolio.schoolProjects.${value}`)}
+								/>
+							</Reveal>
 						)
 					})
 				}

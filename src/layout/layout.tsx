@@ -4,6 +4,8 @@ import i18n from "../i18n/i18n";
 import NavBar from "../components/navbar";
 import type { TFunction } from "i18next";
 import { useTranslation } from "react-i18next";
+import BackgroundPicture from "../assets/BackgroundPicture.png";
+import IconLogo from "../assets/Logo.svg?react";
 
 interface LayoutProps {
 	children: React.ReactNode;
@@ -15,6 +17,8 @@ function Layout({ children }: LayoutProps) {
 	const { t } = useTranslation("translation");
 	const divRef = useRef<HTMLDivElement>(null);
 	const [atTop, setAtTop] = useState<boolean>(true);
+	const [loaded, setLoaded] = useState<boolean>(false);
+	const [displayLoading, setDisplayLoading] = useState<boolean>(true);
 
 	useEffect(() => {
 		if (lng)
@@ -35,8 +39,35 @@ function Layout({ children }: LayoutProps) {
 			ref={divRef}
 			onScroll={handleScroll}
 		>
-			{children}
-			<NavBar t={t} atTop={atTop} />
+			<img
+				className="w-0"
+				src={BackgroundPicture}
+				onLoad={() => {
+					setLoaded(true);
+					setTimeout(() => setDisplayLoading(false), 1000);
+				}}
+				fetchPriority="high"
+			/>
+			{loaded && children}
+
+			{
+				displayLoading &&
+				<div
+					className="fixed top-0 left-0
+					flex items-center justify-center
+					w-full h-screen"
+				>
+					<IconLogo
+						className="animate-bounce
+						transition-opacity duration-300"
+						style={{
+							opacity: loaded ? "0%" : "100%"
+						}}
+					/>
+				</div>
+			}
+
+			<NavBar t={t} atTop={atTop} loaded={loaded} />
 		</main>
 	)
 }

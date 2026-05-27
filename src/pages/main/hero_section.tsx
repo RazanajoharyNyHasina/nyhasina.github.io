@@ -5,6 +5,7 @@ import CTASecondary from "../../components/cta_secondary";
 import IconArrowPointingTopRight from "../../assets/icons/ArrowPointingTopRight.svg?react";
 import IconStar from "../../assets/icons/Star.svg?react";
 import TypingAnimated from "../../components/typing_animated";
+import Reveal from "../../components/reveal";
 
 function Hero({
 	t
@@ -24,18 +25,27 @@ function Hero({
 			flex flex-col items-center justify-center
 			w-full h-screen"
 		>
-			<picture
+			<Reveal
 				className="absolute top-0 left-0
 				overflow-hidden
 				-z-2
 				w-full h-full"
+				initial={{
+					opacity: 0,
+					transform: "scale(105%)"
+				}}
+				whileInView={{
+					opacity: 1,
+					transform: "scale(100%)"
+				}}
 			>
 				<img
 					src={BackgroundPicture}
 					alt={t("hero.backgroundPicture")}
 					className="w-full h-full object-cover select-none"
+					fetchPriority="high"
 				/>
-			</picture>
+			</Reveal>
 
 			<div
 				className="absolute bottom-0 left-0
@@ -60,32 +70,51 @@ function Hero({
 					<h1
 						className="flex flex-col"
 					>
-						<TypingAnimated
-							text={titleRole}
-						/>
-						<p
-							className="
+						<Reveal
+						>
+							<TypingAnimated
+								text={titleRole}
+							/>
+						</Reveal>
+						<Reveal
+							delay={0.2}
+						>
+							<p
+								className="
+								text-4xl
+								md:text-5xl"
+							>
+								RAKOTOARIVONY
+							</p>
+						</Reveal>
+
+						<Reveal
+							delay={0.4}
+						>
+							<p
+								className="text-white
 							text-4xl
 							md:text-5xl"
-						>
-							RAKOTOARIVONY
-						</p>
-						<p
-							className="text-white
-							text-4xl
-							md:text-5xl"
-						>
-							Razanajohary <strong className="text-accent whitespace-nowrap font-normal">Ny Hasina</strong>.
-						</p>
+							>
+								Razanajohary <strong className="text-accent whitespace-nowrap font-normal">Ny Hasina</strong>.
+							</p>
+						</Reveal>
 					</h1>
-					<p
-						className="pointer-events-auto"
+					<Reveal
+						delay={0.6}
 					>
-						{t("hero.paragraph")}
-					</p>
-					<div
+						<p
+							className="pointer-events-auto"
+						>
+							{t("hero.paragraph")}
+						</p>
+					</Reveal>
+
+					<Reveal
 						className="w-full flex gap-4"
+						delay={0.8}
 					>
+
 						<CTAPrimary
 							title={t("hero.cta.primary")}
 							onClick={() => { window.location.href = "mailto:djazejhasi@gmail.com" }}
@@ -96,7 +125,7 @@ function Hero({
 							onClick={() => { }}
 							icon={IconStar}
 						/>
-					</div>
+					</Reveal>
 				</div>
 			</header>
 		</section>

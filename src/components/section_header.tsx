@@ -1,3 +1,5 @@
+import Reveal from "./reveal";
+
 interface SectionHeaderProps {
 	header: string;
 	content: string;
@@ -8,7 +10,7 @@ function SectionHeader({
 	content = "Content"
 }: SectionHeaderProps) {
 	return (
-		<header
+		<Reveal
 			className="flex flex-col items-center justify-center
 			gap-4
 			text-center
@@ -29,7 +31,7 @@ function SectionHeader({
 			>
 				{content}
 			</p>
-		</header>
+		</Reveal>
 	)
 }
 
