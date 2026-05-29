@@ -70,7 +70,8 @@ function Portfolio({
 		"philosopher",
 		"minishell",
 		"webserv",
-		"ft_transcendence"
+		"ft_transcendence",
+		"ft_linear_regression"
 	];
 
 	return (

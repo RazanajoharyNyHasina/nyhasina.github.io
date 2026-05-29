@@ -69,7 +69,8 @@
 			"philosopher": "Une simulation multithread du problème des philosophes mangeurs, axée sur la concurrence et la synchronisation.",
 			"minishell": "Un shell Unix simple gérant les commandes, pipes, redirections et processus.",
 			"webserv": "Un serveur HTTP basique développé depuis zéro, couvrant les sockets, HTTP et la logique serveur en C++.",
-			"ft_transcendence": "Un projet full-stack développant une plateforme immobilière interactive en temps réel avec un système de recherche alimenté par l’IA, incluant l’implémentation complète de l’interface utilisateur ainsi que des fonctionnalités backend et frontend."
+			"ft_transcendence": "Un projet full-stack développant une plateforme immobilière interactive en temps réel avec un système de recherche alimenté par l’IA, incluant l’implémentation complète de l’interface utilisateur ainsi que des fonctionnalités backend et frontend.",
+			"ft_linear_regression": "Une introduction aux concepts du machine learning à travers l’implémentation d’un modèle simple de régression linéaire et d’outils de visualisation de données."
 		}
 	},
 	"footer": {
